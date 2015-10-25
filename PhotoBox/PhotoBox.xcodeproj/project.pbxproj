@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45A59B1C1BDD3B1F00BBC66E /* ViewPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A59B1B1BDD3B1F00BBC66E /* ViewPhotoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		45A59B1E1BDD642B00BBC66E /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A59B1D1BDD642B00BBC66E /* Photos.framework */; };
+		45A59B201BDD6E1600BBC66E /* PhotoThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A59B1F1BDD6E1600BBC66E /* PhotoThumbnailCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		45F286101BDD2CE500B18F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F2860F1BDD2CE500B18F04 /* AppDelegate.swift */; };
 		45F286121BDD2CE500B18F04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F286111BDD2CE500B18F04 /* ViewController.swift */; };
 		45F286151BDD2CE500B18F04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F286131BDD2CE500B18F04 /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45A59B1B1BDD3B1F00BBC66E /* ViewPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPhotoViewController.swift; sourceTree = "<group>"; };
+		45A59B1D1BDD642B00BBC66E /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		45A59B1F1BDD6E1600BBC66E /* PhotoThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
 		45F2860C1BDD2CE500B18F04 /* PhotoBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F2860F1BDD2CE500B18F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45F286111BDD2CE500B18F04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A59B1E1BDD642B00BBC66E /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +84,7 @@
 		45F286031BDD2CE500B18F04 = {
 			isa = PBXGroup;
 			children = (
+				45A59B1D1BDD642B00BBC66E /* Photos.framework */,
 				45F2860E1BDD2CE500B18F04 /* PhotoBox */,
 				45F286231BDD2CE500B18F04 /* PhotoBoxTests */,
 				45F2862E1BDD2CE500B18F04 /* PhotoBoxUITests */,
@@ -100,9 +108,11 @@
 				45F2860F1BDD2CE500B18F04 /* AppDelegate.swift */,
 				45F286111BDD2CE500B18F04 /* ViewController.swift */,
 				45F286131BDD2CE500B18F04 /* Main.storyboard */,
+				45A59B1B1BDD3B1F00BBC66E /* ViewPhotoViewController.swift */,
 				45F286161BDD2CE500B18F04 /* Assets.xcassets */,
 				45F286181BDD2CE500B18F04 /* LaunchScreen.storyboard */,
 				45F2861B1BDD2CE500B18F04 /* Info.plist */,
+				45A59B1F1BDD6E1600BBC66E /* PhotoThumbnailCollectionViewCell.swift */,
 			);
 			path = PhotoBox;
 			sourceTree = "<group>";
@@ -257,6 +267,8 @@
 			files = (
 				45F286121BDD2CE500B18F04 /* ViewController.swift in Sources */,
 				45F286101BDD2CE500B18F04 /* AppDelegate.swift in Sources */,
+				45A59B201BDD6E1600BBC66E /* PhotoThumbnailCollectionViewCell.swift in Sources */,
+				45A59B1C1BDD3B1F00BBC66E /* ViewPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +493,7 @@
 				45F286361BDD2CE500B18F04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45F286371BDD2CE500B18F04 /* Build configuration list for PBXNativeTarget "PhotoBoxTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +502,7 @@
 				45F286391BDD2CE500B18F04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45F2863A1BDD2CE500B18F04 /* Build configuration list for PBXNativeTarget "PhotoBoxUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +511,7 @@
 				45F2863C1BDD2CE500B18F04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
