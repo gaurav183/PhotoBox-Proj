@@ -8,6 +8,7 @@
 
 import UIKit
 import Photos
+import Parse
 
 class ViewPhotoViewController: UIViewController {
     
@@ -48,8 +49,7 @@ class ViewPhotoViewController: UIViewController {
     }
     
     func displayPhoto() {
-        print
-("gets here")
+        print("gets here")
         let imageManager = PHImageManager.defaultManager()
         
         var ID = imageManager.requestImageForAsset(self.photosAsset[self.index] as! PHAsset, targetSize: PHImageManagerMaximumSize, contentMode: .AspectFit, options: nil, resultHandler: { (result, info) -> Void in

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class PhotoThumbnailCollectionViewCell: UICollectionViewCell {
     @IBOutlet var imageView: UIImageView!

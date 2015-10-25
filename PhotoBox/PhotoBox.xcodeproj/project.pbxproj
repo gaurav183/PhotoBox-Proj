@@ -17,6 +17,14 @@
 		45F2861A1BDD2CE500B18F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F286181BDD2CE500B18F04 /* LaunchScreen.storyboard */; };
 		45F286251BDD2CE500B18F04 /* PhotoBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F286241BDD2CE500B18F04 /* PhotoBoxTests.swift */; };
 		45F286301BDD2CE500B18F04 /* PhotoBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F2862F1BDD2CE500B18F04 /* PhotoBoxUITests.swift */; };
+		7872F5991BDD8F60000F815E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872F5971BDD8F60000F815E /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7872F59A1BDD8F60000F815E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872F5981BDD8F60000F815E /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7872F5A41BDD93CE000F815E /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7872F5A31BDD93CE000F815E /* libstdc++.6.tbd */; };
+		7872F5A61BDD93DA000F815E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7872F5A51BDD93D9000F815E /* SystemConfiguration.framework */; };
+		7872F5A81BDD93E2000F815E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7872F5A71BDD93E2000F815E /* AudioToolbox.framework */; };
+		7872F5AA1BDD941E000F815E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7872F5A91BDD941E000F815E /* libsqlite3.tbd */; };
+		7872F5AD1BDD946F000F815E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7872F5AB1BDD946F000F815E /* Bolts.framework */; settings = {ASSET_TAGS = (); ATTRIBUTES = (Required, ); }; };
+		7872F5AE1BDD946F000F815E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7872F5AC1BDD946F000F815E /* Parse.framework */; settings = {ASSET_TAGS = (); ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,14 @@
 		45F2862B1BDD2CE500B18F04 /* PhotoBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F2862F1BDD2CE500B18F04 /* PhotoBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBoxUITests.swift; sourceTree = "<group>"; };
 		45F286311BDD2CE500B18F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7872F5971BDD8F60000F815E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7872F5981BDD8F60000F815E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7872F5A31BDD93CE000F815E /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		7872F5A51BDD93D9000F815E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7872F5A71BDD93E2000F815E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7872F5A91BDD941E000F815E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7872F5AB1BDD946F000F815E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		7872F5AC1BDD946F000F815E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7872F5AA1BDD941E000F815E /* libsqlite3.tbd in Frameworks */,
+				7872F5A81BDD93E2000F815E /* AudioToolbox.framework in Frameworks */,
+				7872F5A61BDD93DA000F815E /* SystemConfiguration.framework in Frameworks */,
+				7872F5AE1BDD946F000F815E /* Parse.framework in Frameworks */,
+				7872F5AD1BDD946F000F815E /* Bolts.framework in Frameworks */,
+				7872F5A41BDD93CE000F815E /* libstdc++.6.tbd in Frameworks */,
 				45A59B1E1BDD642B00BBC66E /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +106,12 @@
 		45F286031BDD2CE500B18F04 = {
 			isa = PBXGroup;
 			children = (
+				7872F5AB1BDD946F000F815E /* Bolts.framework */,
+				7872F5AC1BDD946F000F815E /* Parse.framework */,
+				7872F5A91BDD941E000F815E /* libsqlite3.tbd */,
+				7872F5A71BDD93E2000F815E /* AudioToolbox.framework */,
+				7872F5A51BDD93D9000F815E /* SystemConfiguration.framework */,
+				7872F5A31BDD93CE000F815E /* libstdc++.6.tbd */,
 				45A59B1D1BDD642B00BBC66E /* Photos.framework */,
 				45F2860E1BDD2CE500B18F04 /* PhotoBox */,
 				45F286231BDD2CE500B18F04 /* PhotoBoxTests */,
@@ -113,6 +141,8 @@
 				45F286181BDD2CE500B18F04 /* LaunchScreen.storyboard */,
 				45F2861B1BDD2CE500B18F04 /* Info.plist */,
 				45A59B1F1BDD6E1600BBC66E /* PhotoThumbnailCollectionViewCell.swift */,
+				7872F5971BDD8F60000F815E /* LoginViewController.swift */,
+				7872F5981BDD8F60000F815E /* SignUpViewController.swift */,
 			);
 			path = PhotoBox;
 			sourceTree = "<group>";
@@ -265,9 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7872F59A1BDD8F60000F815E /* SignUpViewController.swift in Sources */,
 				45F286121BDD2CE500B18F04 /* ViewController.swift in Sources */,
 				45F286101BDD2CE500B18F04 /* AppDelegate.swift in Sources */,
 				45A59B201BDD6E1600BBC66E /* PhotoThumbnailCollectionViewCell.swift in Sources */,
+				7872F5991BDD8F60000F815E /* LoginViewController.swift in Sources */,
 				45A59B1C1BDD3B1F00BBC66E /* ViewPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +440,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PhotoBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = npmurali.PhotoBox;
@@ -419,6 +455,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PhotoBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = npmurali.PhotoBox;

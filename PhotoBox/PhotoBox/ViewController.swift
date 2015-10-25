@@ -8,6 +8,7 @@
 
 import UIKit
 import Photos
+import Parse
 
 let reuseIdentifier = "PhotoCell"
 let albumName = "PhotoBox"
@@ -15,12 +16,17 @@ let albumName = "PhotoBox"
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     var albumFound: Bool = false
     
+    var currentUser = PFUser.currentUser()
+    
     var assetCollection: PHAssetCollection!
     
     var photosAsset: PHFetchResult!
 
 //Actions and Outlets
 
+    @IBAction func returnToStepZero(segue: UIStoryboardSegue) {
+    }
+    
     @IBAction func buttonCamera(sender: AnyObject) {
     }
    
@@ -35,6 +41,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionView.backgroundColor = UIColor.whiteColor()
         
         //Check if folder exists, and if it doesn't create it
+        
+        
+        if currentUser != nil {
+            // Do stuff with the user
+        } else {
+            self.performSegueWithIdentifier("showLogInScreen", sender: self)
+        }
         
         let fetchOptions = PHFetchOptions()
         fetchOptions.predicate = NSPredicate(format: "title = %@",albumName)
@@ -120,6 +133,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
     
         return cell
+    }
+    
+    @IBAction func LoginButton(sender: AnyObject) {
+        PFUser.logOut()
     }
 
 }
